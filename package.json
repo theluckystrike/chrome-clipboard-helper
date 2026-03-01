@@ -1,0 +1,38 @@
+{
+    "name": "chrome-clipboard-helper",
+    "version": "0.1.0",
+    "description": "Chrome extension clipboard utilities — copy text/HTML/images, read clipboard, handle paste events, and clipboard history in MV3 extensions. Zero dependencies.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "clipboard",
+        "copy",
+        "paste",
+        "clipboard-api",
+        "manifest-v3",
+        "browser-extension",
+        "clipboard-history",
+        "copy-to-clipboard"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-clipboard-helper.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
